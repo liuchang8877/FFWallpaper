@@ -13,9 +13,9 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define kAPIURLDomain @"http://218.28.20.140:8888" 
+#define kAPIURLDomain @"http://ffpython.sinaapp.com" 
 
-#define		kLoginUrl					        kAPIURLDomain@"/login"   
+#define		kLoginUrl					        kAPIURLDomain@"/index.wsgi"   
 
 
 #define DEBUG_RECEIVE_DATA(data) NSLog(@"%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding])  //打开收到数据的调试信息

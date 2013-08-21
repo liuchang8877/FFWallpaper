@@ -12,6 +12,7 @@
 
 - (NSObject *)parse:(NSData *)data
 {
+    NSLog(@"-----DATA:%@",data);
     if (data) {
         NSDictionary *resultDictionary = [data objectFromJSONData];
         if (resultDictionary) {
