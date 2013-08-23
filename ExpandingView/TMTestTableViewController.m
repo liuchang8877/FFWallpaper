@@ -196,7 +196,7 @@
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
     
     TMPostDetailViewController * pdvc = [[TMPostDetailViewController alloc] init];
-    
+    pdvc.imgeID = 
     [self.navigationController pushViewController:pdvc 
                                          animated:YES];
 }

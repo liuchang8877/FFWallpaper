@@ -32,6 +32,7 @@
 @end
 
 @implementation TMPostDetailViewController
+@synthesize imgeID;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,6 +49,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setTheImageByID];
 }
 
 - (void)viewDidUnload
@@ -55,6 +57,27 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+//Get The Image BY ID
+-(void)setTheImageByID {
+
+    UIImageView* myImgView;
+
+    UIImage *myImage1 = [UIImage imageNamed:@"img1.jpg"];
+    UIImage *myImage2 = [UIImage imageNamed:@"img2.jpg"];
+    
+    if ([imgeID intValue] % 2 == 0 ) {
+    
+       myImgView =  [[UIImageView alloc] initWithImage:myImage1];
+    } else {
+    
+       myImgView =  [[UIImageView alloc] initWithImage:myImage2];
+    }
+    
+    myImgView.frame = CGRectMake(0, 0, 320, 480);
+    
+    [self.view addSubview:myImgView];
 }
 
 -(void)viewWillAppear:(BOOL)animated

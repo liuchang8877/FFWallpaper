@@ -28,6 +28,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TMPostDetailViewController : UIViewController
+@interface TMPostDetailViewController : UIViewController {
 
+    //imgeID
+    NSString* imgeID;
+}
+
+@property(strong,nonatomic)NSString* imgeID;
 @end

@@ -15,7 +15,7 @@
 
 #define kAPIURLDomain @"http://ffpython.sinaapp.com" 
 
-#define		kLoginUrl					        kAPIURLDomain@"/index.wsgi"   
+#define		kLoginUrl					        kAPIURLDomain@"/login"   
 
 
 #define DEBUG_RECEIVE_DATA(data) NSLog(@"%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding])  //打开收到数据的调试信息
